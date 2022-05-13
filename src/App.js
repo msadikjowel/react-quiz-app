@@ -37,9 +37,11 @@ function App() {
             questions={questions}
             score={score}
             setScore={setScore}
-            setQuestions={setQuestions}
           />} />
-          <Route path='/result' element={<Result />} />
+          <Route path='/result' element={<Result
+            score={score}
+            name={name}
+          />} />
         </Routes>
 
       </div>
